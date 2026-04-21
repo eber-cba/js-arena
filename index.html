@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS_ARENA — Aprende JavaScript Como un Hacker</title>
+  <meta name="description" content="Plataforma gamificada para aprender métodos de arrays en JavaScript con efectos 3D, misiones épicas y ranking en tiempo real." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+</head>
+<body>
+  <!-- Spline 3D Viewer Script -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.91/build/spline-viewer.js"></script>
+  
+  <!-- CRT Overlay Effects -->
+  <div id="crt-overlay" class="crt-overlay"></div>
+  <div id="scanlines" class="scanlines"></div>
+  
+  <!-- 3D Perspective Container -->
+  <div id="perspective-container" class="perspective-container">
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+    
+    <!-- 3D Particles Canvas -->
+    <canvas id="particles-canvas" class="particles-canvas"></canvas>
+    
+    <!-- Main App Container -->
+    <div id="app" class="app-container"></div>
+  </div>
+
+  <!-- Event Banner (floating) -->
+  <div id="event-banner" class="event-banner hidden"></div>
+  
+  <!-- Notification Container -->
+  <div id="notification-container" class="notification-container"></div>
+  
+  <!-- Screen Flash Effect -->
+  <div id="screen-flash" class="screen-flash"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
