@@ -10,14 +10,14 @@ import {
 
 // Same Firebase config as main app
 const firebaseConfig = {
-  apiKey: "AIzaSyA1GITPfilWwPjAJ9kyEnKIaLecLIxhgFw",
-  authDomain: "js-arena-74953.firebaseapp.com",
-  databaseURL: "https://js-arena-74953-default-rtdb.firebaseio.com",
-  projectId: "js-arena-74953",
-  storageBucket: "js-arena-74953.firebasestorage.app",
-  messagingSenderId: "340610175513",
-  appId: "1:340610175513:web:a8223374eb4fbff8c9d088",
-  measurementId: "G-BX9N5M1CHG"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
